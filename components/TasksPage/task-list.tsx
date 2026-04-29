@@ -1,5 +1,5 @@
 import Task from "@/components/TasksPage/task";
-import { Plus } from "lucide-react";
+import TaskAdder from "./task-adder";
 interface TaskListProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export default function TaskList({ className }: TaskListProps) {
@@ -13,13 +13,29 @@ export default function TaskList({ className }: TaskListProps) {
         <li>
           <Task></Task>
         </li>
+        <li>
+          <Task></Task>
+        </li>
+        <li>
+          <Task></Task>
+        </li>
+        <li>
+          <Task></Task>
+        </li>
+        <li>
+          <Task></Task>
+        </li>
+        <li>
+          <Task></Task>
+        </li>
+        <li>
+          <Task></Task>
+        </li>
+        <li>
+          <Task></Task>
+        </li>
       </ul>
-      <div className="flex bg-violet-950 rounded-lg p-4">
-        <button>
-          <Plus></Plus>
-        </button>
-        <p>Task to Add</p>
-      </div>
+      <TaskAdder></TaskAdder>
     </section>
   );
 }
